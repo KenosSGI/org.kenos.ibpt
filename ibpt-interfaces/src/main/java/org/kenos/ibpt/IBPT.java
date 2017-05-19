@@ -1,5 +1,7 @@
 package org.kenos.ibpt;
 
+import java.lang.reflect.InvocationTargetException;
+
 import org.kenos.ibpt.bean.IBPTResponse;
 
 /**
@@ -26,10 +28,15 @@ public interface IBPT
 		 * 	@throws InstantiationException
 		 * 	@throws IllegalAccessException
 		 * 	@throws ClassNotFoundException
+		 * 	@throws SecurityException 
+		 * 	@throws NoSuchMethodException 
+		 * 	@throws InvocationTargetException 
+		 * 	@throws IllegalArgumentException 
 		 */
-		public static IBPT newInstance (String key) throws InstantiationException, IllegalAccessException, ClassNotFoundException
+		public static IBPT newInstance (String key) throws ClassNotFoundException, Exception 
 		{
-			return (IBPT) Class.forName("org.kenos.ibpt.IBPTImpl").newInstance();
+			Class<?> clazz = Class.forName("org.kenos.ibpt.IBPTImpl");
+			return (IBPT) clazz.getDeclaredConstructor(String.class).newInstance(key);
 		}	//	newInstance
     }	//	Factory
 }
