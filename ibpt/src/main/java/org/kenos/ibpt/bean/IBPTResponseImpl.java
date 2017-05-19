@@ -155,4 +155,4 @@ public class IBPTResponseImpl implements IBPTResponse
 	{
 		this.fonte = fonte;
 	}
-}
+}	//	IBPTResponseImpl

@@ -54,7 +54,8 @@ public class IBPTImpl implements IBPT
 	}	//	Pipedrive
 	
 	/**
-	 * 	
+	 * 		Get tax for NCM
+	 * 
 	 * @param cnpj
 	 * @param ncm
 	 * @param uf
@@ -92,7 +93,8 @@ public class IBPTImpl implements IBPT
 	}	//	getTaxForNCM
 	
 	/**
-	 * 	
+	 * 	Get tax for NBS
+	 * 
 	 * @param cnpj
 	 * @param nbs
 	 * @param uf

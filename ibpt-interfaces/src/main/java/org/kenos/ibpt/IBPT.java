@@ -2,6 +2,12 @@ package org.kenos.ibpt;
 
 import org.kenos.ibpt.bean.IBPTResponse;
 
+/**
+ * 		IBPT Interface for API
+ * 
+ * 	@author Ricardo Santana (Kenos, www.kenos.com.br)
+ *	@version $Id: IBPT.java, v1.0 2017/05/19 5:36:11 PM, ralexsander Exp $
+ */
 public interface IBPT
 {
 	public IBPTResponse getTaxForNCM (String cnpj, String ncm, String uf, String ex) throws Exception;
