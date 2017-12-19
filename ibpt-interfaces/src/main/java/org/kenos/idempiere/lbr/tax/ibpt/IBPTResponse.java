@@ -1,4 +1,4 @@
-package org.kenos.ibpt.bean;
+package org.kenos.idempiere.lbr.tax.ibpt;
 
 import java.math.BigDecimal;
 

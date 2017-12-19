@@ -1,8 +1,6 @@
-package org.kenos.ibpt;
+package org.kenos.idempiere.lbr.tax.ibpt;
 
 import java.lang.reflect.InvocationTargetException;
-
-import org.kenos.ibpt.bean.IBPTResponse;
 
 /**
  * 		IBPT Interface for API
@@ -35,8 +33,8 @@ public interface IBPT
 		 */
 		public static IBPT newInstance (String key) throws ClassNotFoundException, Exception 
 		{
-			Class<?> clazz = Class.forName("org.kenos.ibpt.IBPTImpl");
+			Class<?> clazz = Class.forName("org.kenos.idempiere.lbr.ibpt.IBPTImpl");
 			return (IBPT) clazz.getDeclaredConstructor(String.class).newInstance(key);
 		}	//	newInstance
     }	//	Factory
-}
+}	//	IBPT
