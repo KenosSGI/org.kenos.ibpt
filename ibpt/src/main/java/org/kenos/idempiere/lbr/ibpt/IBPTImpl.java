@@ -1,4 +1,4 @@
-package org.kenos.ibpt;
+package org.kenos.idempiere.lbr.ibpt;
 
 import java.net.URLEncoder;
 import java.util.Collections;
@@ -8,7 +8,7 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
 import org.apache.cxf.jaxrs.client.WebClient;
-import org.kenos.ibpt.bean.IBPTResponseImpl;
+import org.kenos.idempiere.lbr.tax.ibpt.IBPT;
 
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.DeserializationFeature;

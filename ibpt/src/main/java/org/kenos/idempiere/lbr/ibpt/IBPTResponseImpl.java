@@ -1,6 +1,8 @@
-package org.kenos.ibpt.bean;
+package org.kenos.idempiere.lbr.ibpt;
 
 import java.math.BigDecimal;
+
+import org.kenos.idempiere.lbr.tax.ibpt.IBPTResponse;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
