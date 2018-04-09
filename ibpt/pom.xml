@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.kenos.ibpt</groupId>
   <artifactId>ibpt</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   <dependencies>
   	<dependency>
   		<groupId>org.apache.cxf</groupId>
@@ -18,7 +18,7 @@
   	<dependency>
   		<groupId>org.kenos.ibpt</groupId>
   		<artifactId>ibpt-interfaces</artifactId>
-  		<version>1.0</version>
+  		<version>1.1</version>
   	</dependency>
   </dependencies>
   <build>

@@ -4,7 +4,7 @@
 
   <groupId>org.kenos.ibpt</groupId>
   <artifactId>ibpt-interfaces</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   <packaging>jar</packaging>
   <name>ibpt-interfaces</name>
   <properties>
