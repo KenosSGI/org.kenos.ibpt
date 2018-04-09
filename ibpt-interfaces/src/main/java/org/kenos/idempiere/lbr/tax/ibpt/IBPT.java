@@ -1,6 +1,7 @@
 package org.kenos.idempiere.lbr.tax.ibpt;
 
 import java.lang.reflect.InvocationTargetException;
+import java.math.BigDecimal;
 
 /**
  * 		IBPT Interface for API
@@ -10,8 +11,24 @@ import java.lang.reflect.InvocationTargetException;
  */
 public interface IBPT
 {
+	/**
+	 * Este era o método utilizado na versão antiga da API, em que alguns
+	 * campos não eram obrigatórios.
+	 */
+	@Deprecated
 	public IBPTResponse getTaxForNCM (String cnpj, String ncm, String uf, String ex) throws Exception;
+	
+	/**
+	 * Este era o método utilizado na versão antiga da API, em que alguns
+	 * campos não eram obrigatórios.
+	 */
+	@Deprecated
 	public IBPTResponse getTaxForNBS (String cnpj, String nbs, String uf) throws Exception;
+	
+	public IBPTResponse getTaxForNCM (String cnpj, String ncm, String uf, String ex, String descricao, 
+			String unidadeMedida, BigDecimal valor, String gtin) throws Exception;
+	public IBPTResponse getTaxForNBS (String cnpj, String nbs, String uf, String descricao,
+			String unidadeMedida, BigDecimal valor) throws Exception;
 
 	/**
 	 * 		Factory
